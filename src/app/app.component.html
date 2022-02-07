@@ -5,3 +5,11 @@
     why quotes, why sayings, and why proverbs, collected over the years from a 
     variety of sources.</p>
 </div>
+
+<nav class='navbar navbar-light bg-light'>
+  <a class='navbar-brand'>{{pageTitle}}</a>
+  <button type="button" class="btn addQuoteBtn" (click)="openFormModal()"><i class="fa fa-fw fa-plus"></i> Add Quote</button>
+</nav>
+<div class="container">
+  <ql-quotes [quotes]='quotes'></ql-quotes>
+</div>
